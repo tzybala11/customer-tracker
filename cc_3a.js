@@ -21,7 +21,7 @@ customers.shift();
 // Update Customer Info
 customers.forEach(customer => {
     if (customer.name === "William")
-        customer.email = "william1@email"
+        customer.email = "william1@email.com"
 });
 
 customers[0].purchases.push("Rice");
