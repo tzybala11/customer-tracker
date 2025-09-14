@@ -19,7 +19,14 @@ customers.shift();
     console.log(customers);
 
 // Update Customer Info
+customers.forEach(customer => {
+    if (customer.name === "William")
+        customer.email = "william1@email"
+});
 
+customers[0].purchases.push("Rice");
+
+    console.log(customers);
 
 // Display Customer Information
-
+customers.forEach(customer => console.log(`${customer.name}\t|\t${customer.email}|\t${customer.purchases.length}`));
